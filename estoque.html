@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque</title>
+    <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Estoque</h1>
+        <div class="add-product">
+            <h2>Adicionar Novo Produto</h2>
+            <form id="addProductForm">
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" required>
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </div>
+        <div class="stock">
+            <h2>Estoque</h2>
+            <ul id="stockList">
+                <!-- Produtos serão adicionados aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
