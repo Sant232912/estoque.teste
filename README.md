@@ -1,2 +1,3 @@
 # estoque.teste
-Apenas para teste e futuramente portifólio esta sendo criado este sistema de estoque
+Criado apenas para teste pessoal a partir de hoje 13/03 será incluido as evoluções 
+do meu sistema de estoque.
