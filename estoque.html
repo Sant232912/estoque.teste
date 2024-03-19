@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Estoque</title>
     <link rel="stylesheet" href="estoque.css">
+    <style>
+        /* Centraliza o texto "Menu" */
+        .sidebar strong {
+            text-align: center;
+        }
+
+     </style>
 </head>
 <body>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+        <strong>Menu:</strong>
+        <ul>
+            <li><a href="#">Cadastrar produto</a></li>
+            <li><a href="#">Itens já cadastrados</a></li>
+            <li><a href="#">Impressão de estoque</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo principal -->
     <div class="container">
         <h1>Sistema de Estoque</h1>
         <div class="add-product">
-            <h2>Adicionar Novo Produto</h2>
+            <h2>Localize o produto</h2>
             <form id="addProductForm">
                 <label for="productName">Nome do Produto:</label>
                 <input type="text" id="productName" required>
                 <label for="quantity">Quantidade:</label>
                 <input type="number" id="quantity" required>
-                <button type="submit">Adicionar Produto</button>
+                <button type="submit"><strong>Pesquisar</strong> </button>
             </form>
-        </div>
-        <div class="stock">
-            <h2>Estoque</h2>
-            <ul id="stockList">
-                <!-- Produtos serão adicionados aqui dinamicamente -->
-            </ul>
         </div>
     </div>
 

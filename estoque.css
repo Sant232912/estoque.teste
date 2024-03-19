@@ -1,17 +1,47 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 5%;
     padding: 0;
-    background-color: #7a367c;
+    background-image:url(imagens/capa-pg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #05d621;
+    max-width: 400px;
+    margin: 210px auto;
+    padding: 50px;
+    background-color: #942c58;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centralizado {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 h1 {
@@ -40,24 +70,4 @@ h1 {
 
 .add-product button:hover {
     background-color: #45a049;
-}
-
-.stock h2 {
-    margin-top: 20px;
-}
-
-.stock ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.stock li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.stock li.alert {
-    background-color: #ffdddd;
 }
