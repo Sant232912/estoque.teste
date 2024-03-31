@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Estoque</title>
+    <link rel="stylesheet" href="estoque.css">
+    <style>
+        /* Estilos de login */
+        /* Estilos para o formulário de login */
+        #loginForm {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return login()">
+            <label for="username">Usuário:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+            // Verifique as credenciais do usuário (substitua isso com uma lógica real de autenticação)
+            if (username === "Anne2329" && password === "123456") {
+                // Autenticação bem-sucedida, redirecione para a página principal
+                window.location.href = "dashboard.html";
+                return false; // Impede que o formulário seja enviado
+            } else {
+                // Se as credenciais estiverem erradas, exiba uma mensagem de erro (você pode estilizar isso conforme necessário)
+                alert("Credenciais inválidas. Por favor, tente novamente.");
+                return false; // Impede que o formulário seja enviado
+            }
+        }
+    </script>
+</body>
+</html>
